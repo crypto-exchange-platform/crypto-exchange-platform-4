@@ -4,8 +4,13 @@ import {
   NavigationMenuItem,
   NavigationMenuList,
 } from "./ui/navigation-menu"
+import { FC } from "react"
+interface HeaderProps {
+  onLogin: () => void
+  onSignup: () => void
+}
 
-const Header = () => {
+const Header: FC<HeaderProps> = ({ onLogin, onSignup }) => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 border-b border-white/10 backdrop-blur-md bg-black/60">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
@@ -24,10 +29,14 @@ const Header = () => {
         </NavigationMenu>
 
         <div className="flex items-center gap-3">
-          <Button variant="ghost" className="text-white hover:text-red-400 text-sm">
+          <Button variant="ghost" className="text-white text-sm" onClick={onLogin}>
             Login
           </Button>
-          <Button variant="default" className="bg-red-500 hover:bg-red-600 text-white text-sm px-5 py-2 rounded-full">
+          <Button
+            variant="default"
+            className="bg-red-500 hover:bg-red-600 text-white text-sm px-5 py-2 rounded-full"
+            onClick={onSignup}
+          >
             Sign Up
           </Button>
         </div>
