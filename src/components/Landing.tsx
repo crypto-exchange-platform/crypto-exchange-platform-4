@@ -4,6 +4,7 @@ import { LoginModal } from "./LogInModal"
 import { SignupModal } from "./SignUpModal"
 import Hero from "./Hero"
 import HowItWorks from "./HowItWorks"
+import CryptoSlider from "./CryptoSlider"
 
 
 function LandingPage() {
@@ -17,6 +18,7 @@ function LandingPage() {
       <Header onLogin={() => setModal("login")} onSignup={() => setModal("signup")} />
       <Hero />
       <HowItWorks/>
+      <CryptoSlider/>
     </div>
   )
 }
