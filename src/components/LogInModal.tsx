@@ -7,9 +7,9 @@ interface LoginModalProps {
 export const LoginModal: FC<LoginModalProps> = ({ onClose }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
-      <div className="bg-red-600 text-black w-full max-w-md p-6 rounded-md shadow-lg relative">
+      <div className="bg-violet-950 text-black w-full max-w-md p-6 rounded-md shadow-lg relative">
         <button onClick={onClose} className="absolute right-4 top-4 text-xl">×</button>
-        <h2 className="text-2xl font-bold mb-6 text-center text-red-900">Log In</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center text-white">Log In</h2>
         <form className="space-y-4">
           <input
             type="email"
