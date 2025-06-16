@@ -9,7 +9,7 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="relative bg-[#160E33] py-24 px-4 backdrop-blur-md bg-black/98">
+    <section className="relative bg-gradient-to-br from-black via-violet-950 to-black   py-24 px-4 ">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div className="relative rounded-xl overflow-hidden shadow-lg">
           <img
