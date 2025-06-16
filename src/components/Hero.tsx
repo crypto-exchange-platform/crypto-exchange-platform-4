@@ -12,9 +12,9 @@ const Hero = () => {
   return (
     <section
       className="relative text-center text-white pt-52 pb-32 overflow-hidden bg-no-repeat bg-cover bg-center"
-      style={{ backgroundImage: "url('/background.png')" }}
+      style={{ backgroundImage: "url('/background.avif')" }}
     >
-      <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px]" />
+      <div className="absolute inset-0 " />
 
       <div className="relative z-10 max-w-5xl mx-auto px-4">
         <motion.h2

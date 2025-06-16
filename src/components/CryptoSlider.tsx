@@ -26,7 +26,9 @@ const CryptoSlider = () => {
   }
 
   return (
-    <section className="relative bg-black py-24 px-4">
+<section
+  className="relative text-center text-white pt-52 pb-32 overflow-hidden bg-gradient-to-br from-black via-violet-950 to-black"
+>
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-white text-3xl md:text-4xl font-bold mb-2">
           Available Cryptos
