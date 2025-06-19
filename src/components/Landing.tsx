@@ -16,7 +16,12 @@ function LandingPage() {
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
       {modal === "login" && <LoginModal onClose={() => setModal(null)} />}
-      {modal === "signup" && <SignupModal onClose={() => setModal(null)} />}
+      {modal === "signup" && (
+        <SignupModal
+          onClose={() => setModal(null)}
+          onSignupSuccess={() => setModal("login")}
+        />
+      )}
 
       <Header
         onLogin={() => setModal("login")}
